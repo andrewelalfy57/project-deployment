@@ -94,7 +94,7 @@ export function DataTableRowActions({ row }: DataTableRowActionsProps) {
         completed: editedTask.completed === "completed",
       };
       console.log("Updated task:", updatedTask);
-      await axios.put(`"https://backend-production-197e.up.railway.app/tasks/${task.id}`, updatedTask);
+      await axios.put(`https://backend-production-197e.up.railway.app/tasks/${task.id}`, updatedTask);
       closeDialog();
       window.location.reload();
     } catch (error) {
