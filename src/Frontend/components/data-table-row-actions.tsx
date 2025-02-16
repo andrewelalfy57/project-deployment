@@ -31,7 +31,7 @@ import { Label } from "./ui/label";
 import { Checkbox } from "./ui/checkbox";
 import { taskSchema } from "./schema";
 
-interface DataTableRowActionsProps {
+interface DataTableRowActionsProps {https://backend-production-197e.up.railway.app/tasks/${task.id}
   row: Row<any>;
 }
 
@@ -47,7 +47,7 @@ export function DataTableRowActions({ row }: DataTableRowActionsProps) {
 
   const deleteTask = async () => {
     try {
-      await axios.delete(`"https://backend-production-197e.up.railway.app/tasks/${task.id}`);
+      await axios.delete(`https://backend-production-197e.up.railway.app/tasks/${task.id}`);
       setIsDeleteDialogOpen(false); // Close the delete dialog after deletion
       window.location.reload(); // Reload the page to reflect the changes
     } catch (error) {
